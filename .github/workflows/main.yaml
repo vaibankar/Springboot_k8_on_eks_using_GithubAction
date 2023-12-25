@@ -1,4 +1,4 @@
-name: petclinic app deploy to eks
+name: springboot app deploy to eks
 on: 
   push:
     branches: [ "main" ]
@@ -43,5 +43,4 @@ jobs:
 
     - name: Deploy to eks
       run: |
-        kubectl apply -f deployment.yaml
-        kubectl apply -f service.yaml
+        kubectl apply -f deploymentservice.yaml
